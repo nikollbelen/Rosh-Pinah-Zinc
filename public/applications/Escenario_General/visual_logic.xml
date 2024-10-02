@@ -776,7 +776,7 @@
       </next>
     </block>
   </tab>
-  <tab name="procedures" type="CommonTab" active="true" scrollx="-9.000000000000114" scrolly="-53.599999999999795" scale="0.9">
+  <tab name="procedures" type="CommonTab" active="false" scrollx="-9.000000000000114" scrolly="-53.599999999999795" scale="0.9">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="uVJds0Guq6_Hymhbrzl!">objeto</variable>
       <variable id="rNlmzph%c[N0U`P3B1o@">paso</variable>
@@ -1101,7 +1101,7 @@
       </statement>
     </block>
   </tab>
-  <tab name="molienda" type="CommonTab" active="false" scrollx="-3.000000000000341" scrolly="313.00000000000006" scale="0.9">
+  <tab name="molienda" type="CommonTab" active="true" scrollx="-3.000000000000341" scrolly="313.00000000000006" scale="0.9">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="uVJds0Guq6_Hymhbrzl!">objeto</variable>
       <variable id="rNlmzph%c[N0U`P3B1o@">paso</variable>
@@ -1125,7 +1125,7 @@
       </value>
       <value name="ARG2">
         <block type="text" id="p4G}$fj~1ZV`Csla;CX+">
-          <field name="TEXT">/molienda</field>
+          <field name="TEXT">/milling</field>
         </block>
       </value>
     </block>
