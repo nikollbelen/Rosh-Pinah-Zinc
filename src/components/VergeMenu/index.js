@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { MenuContainer, MenuIcon, MenuDescription, MenuItems, MenuItem, Ayuda } from './styles';
 import useSoundButton from "../../hooks/useSoundButton";
 
@@ -17,12 +17,6 @@ const useSound = (url) => {
 
 // Componente del menú
 const Menu = ({ items, menuIconImage }) => {
-  const [showDescription, setShowDescription] = useState(false);
-  const [open, setOpen] = useState(false);
-
-  // Carga los sonidos
-  const { play: playMenuOpenSound } = useSound('/sounds/menu-open.mp3');
-  const { play: playMenuCloseSound } = useSound('/sounds/menu-close.mp3');
   const { playHover, playClick, stopHover, stopClick } = useSoundButton();
 
   const handleMouseEnter = () => {
@@ -37,33 +31,15 @@ const Menu = ({ items, menuIconImage }) => {
     playClick();
   };
 
-  const handleClick = () => {
-    stopHover();
-    stopClick();
-    playClick();
-    if (!open) {
-      setShowDescription(true);
-      playMenuOpenSound();
-    } else {
-      setShowDescription(false);
-      playMenuCloseSound();
-    }
-    setOpen(!open);
-  };
-
   return (
     <MenuContainer id='menu'>
-      <MenuIcon
-        onMouseEnter={handleMouseEnter}
-        onClick={handleClick}
-      >
+      <MenuIcon>
         <img src={menuIconImage} alt="Menu Icon" />
-        <MenuDescription show={showDescription}>
-        <p className='en'>Rosh Pinah Zinc</p><p className='es'>Zinc de Rosh Pinah</p>
+        <MenuDescription>
+          <p className='en'>Rosh Pinah Zinc</p><p className='es'>Zinc de Rosh Pinah</p>
         </MenuDescription>
-        <Ayuda className="content content1" style={{ zIndex: 30, display: "none" }}><p className='en'>Menu</p><p className='es'>Menu</p></Ayuda>
       </MenuIcon>
-      <MenuItems open={open}>
+      <MenuItems open={true}> {/* Forzar el menú a estar siempre visible */}
         {items.map((item, index) => (
           <MenuItem onMouseEnter={handleMouseEnter} onClick={handleButtonClick2} id={item.id} key={index}>
             <img src={item.icon} alt={`Icon ${index}`} />

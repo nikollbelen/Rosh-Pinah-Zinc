@@ -34,7 +34,6 @@ const menuItems = [
         imageUrl="/images/fondo.png"
         logoUrl="/images/logo-tecsup.png"
        />
-      <VergeLogo logoUrl="/images/logo-tecsup.png" />
       <Menu items={menuItems} menuIconImage="/images/icon1.png"/>
       <IconButtons />
       <VergeViewer
