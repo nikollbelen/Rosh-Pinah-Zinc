@@ -107,8 +107,8 @@ export const MenuDescription = styled.div`
   animation: ${deslizar} 1s ease-out; // Animación suave al aparecer desde la izquierda
 
   @media (max-width: 1050px) {
-    font-size: 1.7rem;
-    width: 15rem;
+    font-size: 1.3rem;
+    width: 12rem;
     padding: 0.8rem;
   }
 `;
@@ -175,6 +175,7 @@ export const MenuItems = styled.div`
   @media (max-width: 1050px) {
     padding: 0.6rem 0.5rem 0.6rem 0.2rem;
     max-height: 13.5rem;
+    width: 13rem;
   }
 `;
 
@@ -196,13 +197,14 @@ export const MenuItem = styled.div`
   }
 
   img {
+    display: none;
     width: 2rem;
     height: 2rem;
     margin-right: 10px;
   }
 
   @media (max-width: 1050px) {
-    font-size: 0.8rem;
+    font-size: 1.1rem !important;
     margin: 0.3rem;
     border-radius: 0.5rem;
     padding: 0.5rem;

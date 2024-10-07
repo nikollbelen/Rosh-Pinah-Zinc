@@ -17,23 +17,24 @@ export const ContenedorLogo = styled.div`
   z-index: 20;
   display: none;
   position: absolute;
-  top: 3rem;
+  top: 1rem;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5); // Rectángulo negro semi-transparente
-  padding: 0.7em 4rem;
+  //background-color: rgba(0, 0, 0, 0.5); // Rectángulo negro semi-transparente
+  padding: 0.7em 1.5rem;
   border-radius: 0rem 1.5rem 1.5rem 0rem;
   justify-content: center;
   align-items: center;
   animation: ${deslizar} 1s ease-out; // Animación suave al aparecer desde la izquierda
 
   @media (max-width: 1050px) {
-    top: 1rem;
+    top: .5rem;
     padding: 0.5em 1rem;
   }
 `;
 
 // Componente estilizado para la imagen del logo
 export const Logo = styled.img`
+  opacity: 0.5;
   width: 10rem;
   height: auto;
 
