@@ -19,12 +19,12 @@ const menuItems = [
   { id: 'paso1', icon: '/images/icon3.png', ENdescription: 'Free Movement', ESdescription: 'Movimiento Libre' },
   { id: 'paso2', icon: '/images/icon2.png', ENdescription: 'Crushing', ESdescription: 'Trituración' },
   { id: 'paso3', icon: '/images/icon2.png', ENdescription: 'Milling', ESdescription: 'Molienda' },
-  { id: 'paso4', icon: '/images/icon2.png', ENdescription: 'Lead Flotation', ESdescription: 'Flotación de plomo' },
+  { id: 'paso4', icon: '/images/icon2.png', ENdescription: 'Backfill Plant', ESdescription: 'Planta de relleno' },
   { id: 'paso5', icon: '/images/icon2.png', ENdescription: 'Zinc Flotation', ESdescription: 'Flotación de zinc' },
-  { id: 'paso6', icon: '/images/icon2.png', ENdescription: 'Lead Dewatering', ESdescription: 'Deshidratación de plomo' },
-  { id: 'paso7', icon: '/images/icon2.png', ENdescription: 'Zinc Dewatering', ESdescription: 'Deshidratación de zinc' },
-  { id: 'paso8', icon: '/images/icon2.png', ENdescription: 'Reagents', ESdescription: 'Reactivos' },
-  { id: 'paso9', icon: '/images/icon2.png', ENdescription: 'Backfill Plant', ESdescription: 'Planta de relleno' },
+  { id: 'paso6', icon: '/images/icon2.png', ENdescription: 'Lead Flotation', ESdescription: 'Flotación de plomo' },
+  { id: 'paso7', icon: '/images/icon2.png', ENdescription: 'Lead Dewatering', ESdescription: 'Deshidratación de plomo' },
+  { id: 'paso8', icon: '/images/icon2.png', ENdescription: 'Zinc Dewatering', ESdescription: 'Deshidratación de zinc' },
+  { id: 'paso9', icon: '/images/icon2.png', ENdescription: 'Reagents', ESdescription: 'Reactivos' },
 ];
 
   return (
